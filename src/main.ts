@@ -14,7 +14,11 @@ if (system.uniPlatform !== 'web') {
   AirConfig.apiUrl = `${rootUrl}`
   AirConfig.staticUrl = `${rootUrl}upload/`
 } else {
-  AirConfig.apiUrl = '/api/'
+  // 修改为你的线上后端 API 地址
+  const rootUrl = 'https://your-backend-domain.com/'
+
+  AirConfig.apiUrl = `${rootUrl}`
+  AirConfig.staticUrl = `${rootUrl}upload/`
 }
 
 AirConfig.login = () => {
