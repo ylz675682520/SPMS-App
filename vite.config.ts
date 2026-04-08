@@ -28,6 +28,12 @@ export default defineConfig({
         changeOrigin: true,
       },
       '/oauth2': 'http://127.0.0.1:8080',
+      '/backend': {
+        target: 'http://192.168.88.195:8081',
+        rewrite: (path) => path.replace(/^\/backend/, ''),
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 })

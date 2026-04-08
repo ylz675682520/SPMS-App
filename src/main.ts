@@ -14,8 +14,8 @@ if (system.uniPlatform !== 'web') {
   AirConfig.apiUrl = `${rootUrl}`
   AirConfig.staticUrl = `${rootUrl}upload/`
 } else {
-  // 修改为你的线上后端 API 地址
-  const rootUrl = 'http://192.168.88.195:8081/'
+  // 使用 Vite 代理转发，避免 HTTPS 页面访问 HTTP 后端导致的混合内容问题
+  const rootUrl = '/backend/'
 
   AirConfig.apiUrl = `${rootUrl}`
   AirConfig.staticUrl = `${rootUrl}upload/`
