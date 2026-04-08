@@ -19,7 +19,7 @@ if (system.uniPlatform !== 'web') {
 
   //AirConfig.apiUrl = `${rootUrl}`
   //AirConfig.staticUrl = `${rootUrl}upload/`
-  const rootUrl = 'http://10.165.88.195:8081/'
+  const rootUrl = 'http://192.168.88.195:8081/'
 
   AirConfig.apiUrl = `${rootUrl}`
   AirConfig.staticUrl = `${rootUrl}upload/`
