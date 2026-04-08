@@ -15,7 +15,11 @@ if (system.uniPlatform !== 'web') {
   AirConfig.staticUrl = `${rootUrl}upload/`
 } else {
   // 使用 Vite 代理转发，避免 HTTPS 页面访问 HTTP 后端导致的混合内容问题
-  const rootUrl = '/backend/'
+  // const rootUrl = '/backend/'
+
+  //AirConfig.apiUrl = `${rootUrl}`
+  //AirConfig.staticUrl = `${rootUrl}upload/`
+  const rootUrl = 'http://10.165.88.195:8081/'
 
   AirConfig.apiUrl = `${rootUrl}`
   AirConfig.staticUrl = `${rootUrl}upload/`
