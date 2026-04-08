@@ -15,7 +15,7 @@ if (system.uniPlatform !== 'web') {
   AirConfig.staticUrl = `${rootUrl}upload/`
 } else {
   // 修改为你的线上后端 API 地址
-  const rootUrl = 'https://192.168.1.195:8081/'
+  const rootUrl = 'https://192.168.88.195:8081/'
 
   AirConfig.apiUrl = `${rootUrl}`
   AirConfig.staticUrl = `${rootUrl}upload/`
