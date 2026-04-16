@@ -23,11 +23,11 @@ export default defineConfig({
     https: false,
     proxy: {
       '/api': {
-        target: 'http://localhost:8080/',
+        target: 'http://192.168.88.195:8080/',
         rewrite: (path) => path.replace(/^\/api/, ''),
         changeOrigin: true,
       },
-      '/oauth2': 'http://127.0.0.1:8080',
+      '/oauth2': 'http://192.168.88.195:8081',
       '/backend': {
         target: 'http://192.168.88.195:8081',
         rewrite: (path) => path.replace(/^\/backend/, ''),
